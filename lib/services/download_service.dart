@@ -45,10 +45,6 @@ class DownloadService {
       } else {
         directory = await getDownloadsDirectory();
       }
-
-      if (directory == null) {
-        return DownloadResult(success: false, message: '⚠️ Could not access storage directory.');
-      }
       await directory.create(recursive: true);
 
       // 4. Determine Filename & Extension
