@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:Regrabber/screens/home/home_view_model.dart';
-import 'package:Regrabber/screens/home/widgets/preview_section.dart';
-import 'package:Regrabber/screens/home/widgets/history_list.dart';
-import 'package:Regrabber/screens/home/widgets/settings_toggle.dart';
-import 'package:Regrabber/screens/home/widgets/url_input_section.dart';
-import 'package:Regrabber/utils/user_message.dart';
-import 'package:Regrabber/screens/home/widgets/settings/settings_screen.dart';
+import 'package:regrabber/screens/home/home_view_model.dart';
+import 'package:regrabber/screens/home/widgets/preview_section.dart';
+import 'package:regrabber/screens/home/widgets/history_list.dart';
+import 'package:regrabber/screens/home/widgets/settings_toggle.dart';
+import 'package:regrabber/screens/home/widgets/url_input_section.dart';
+import 'package:regrabber/utils/user_message.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -30,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ReGrabber (Modular)'),
+        title: const Text('regrabber (Modular)'),
         actions: [
           SettingsToggle(
             value: viewModel.autoOpenAfterDownload,

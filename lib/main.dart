@@ -1,12 +1,12 @@
-import 'package:Regrabber/services/grab_service.dart';
+import 'package:regrabber/services/grab_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:Regrabber/screens/home/home_screen.dart';
-import 'package:Regrabber/screens/home/home_view_model.dart';
-import 'package:Regrabber/services/download_service.dart';
-import 'package:Regrabber/services/history_service.dart';
-import 'package:Regrabber/services/clipboard_service.dart';
-import 'package:Regrabber/services/settings_service.dart';
+import 'package:regrabber/screens/home/home_screen.dart';
+import 'package:regrabber/screens/home/home_view_model.dart';
+import 'package:regrabber/services/download_service.dart';
+import 'package:regrabber/services/history_service.dart';
+import 'package:regrabber/services/clipboard_service.dart';
+import 'package:regrabber/services/settings_service.dart';
 
 void main() {
   runApp(
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ReGrabber',
+      title: 'regrabber',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),

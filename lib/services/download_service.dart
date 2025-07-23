@@ -45,6 +45,9 @@ class DownloadService {
       } else {
         directory = await getDownloadsDirectory();
       }
+      if (directory == null) {
+        return DownloadResult(success: false, message: '⚠️ Could not determine a valid download directory.');
+      }
       await directory.create(recursive: true);
 
       // 4. Determine Filename & Extension
@@ -56,7 +59,7 @@ class DownloadService {
           extension = ext;
         }
       }
-      final fileName = 'Regrabber_${DateTime.now().millisecondsSinceEpoch}$extension';
+      final fileName = 'regrabber_${DateTime.now().millisecondsSinceEpoch}$extension';
       final file = File('${directory.path}/$fileName');
 
       // 5. Write File

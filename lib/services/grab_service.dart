@@ -1,5 +1,5 @@
-import 'package:Regrabber/models/grab_result.dart';
-import 'package:Regrabber/utils/url_parser.dart';
+import 'package:regrabber/models/grab_result.dart';
+import 'package:regrabber/utils/url_parser.dart';
 
 const String _defaultPreviewImageUrlFromService =
     'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Sample_User_Icon.png/480px-Sample_User_Icon.png';

@@ -19,12 +19,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   Future<void> _loadSettings() async {
-    final value = await SettingsService.getAutoOpenAfterDownload();
+    final value = await SettingsService.getAutoOpenAfterDownload(context as bool);
     setState(() => _autoOpenAfterDownload = value);
   }
 
   Future<void> _toggleAutoOpen(bool value) async {
-    await SettingsService.setAutoOpenAfterDownload(value);
+    await SettingsService.getAutoOpenAfterDownload(value);
     setState(() => _autoOpenAfterDownload = value);
   }
 

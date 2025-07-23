@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart';
-import 'package:Regrabber/services/download_service.dart';
-import 'package:Regrabber/services/history_service.dart';
-import 'package:Regrabber/services/clipboard_service.dart';
-import 'package:Regrabber/services/settings_service.dart';
-import 'package:Regrabber/utils/user_message.dart'; // For StatusType
-import 'package:Regrabber/services/grab_service.dart';
+import 'package:regrabber/services/download_service.dart';
+import 'package:regrabber/services/history_service.dart';
+import 'package:regrabber/services/clipboard_service.dart';
+import 'package:regrabber/services/settings_service.dart';
+import 'package:regrabber/utils/user_message.dart'; // For StatusType
+import 'package:regrabber/services/grab_service.dart';
 
 
 class HomeViewModel extends ChangeNotifier {
